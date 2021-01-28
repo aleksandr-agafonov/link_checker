@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<div>
+
+{% autoescape off %}
+{{ links_content }}
+{% endautoescape %}
+
+
+</div>
+
+<br>
+
+<form action = "{% url 'clear_db' %}">
+    <input type="submit" value="Check links again" name="clear_data_base">
+    </form>
+
+</div>
+</body>
+</html>

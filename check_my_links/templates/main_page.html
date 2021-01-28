@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link checker</title>
+</head>
+<body>
+
+<h1>Проверка ссылок</h1>
+
+
+<form action="{% url 'show_result' %}">
+    {% csrf_token %}
+    <textarea rows="10" cols="60" name="links_input"></textarea>
+    <br>
+    <input type="submit" value="Check links">
+    </form>
+
+</body>
+</html>
